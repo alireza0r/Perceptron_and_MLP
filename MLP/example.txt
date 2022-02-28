@@ -1,0 +1,37 @@
+# Creator: AlirezaRahmati
+# Amirkabir university
+
+# 1 --------------------------------------------------------------------------------
+#use Circle dataset
+#train dataset and valid dataset and test dataset are same
+#neurons at each layer = 2 neurons for hidden layer 1, 3 neurons for hidden layer 2,  2 neurons for output layer
+#activation = tanh - tanh - sigmoid
+#output class = 2
+python main.py --input-shape 2 --output-shape 2 --n-list 2-3-2 --a-list t-t-s --l 0.9 --epochs 20 --batch 10 --x dataset/x_dataset.csv --y dataset/y_dataset.csv --x-valid dataset/x_dataset.csv --y-valid dataset/y_dataset.csv --x-test dataset/x_dataset.csv --y-test dataset/y_dataset.csv
+
+
+# 2 --------------------------------------------------------------------------------
+#use Circle dataset
+#train dataset and valid dataset are same
+#neurons at each layer = 2 neurons for hidden layer 1, 3 neurons for hidden layer 2,  2 neurons for output layer
+#activation = tanh - tanh - sigmoid
+#output class = 2
+python main.py --input-shape 2 --output-shape 2 --n-list 2-3-2 --a-list t-t-s --l 0.9 --epochs 20 --batch 10 --x dataset/x_dataset.csv --y dataset/y_dataset.csv --x-valid dataset/x_dataset.csv --y-valid dataset/y_dataset.csv
+
+
+# 3 --------------------------------------------------------------------------------
+#use Circle dataset
+#train dataset and valid dataset are same
+#neurons at each layer = 2 neurons for hidden layer 1, 3 neurons for hidden layer 2,  2 neurons for output layer
+#activation = tanh - tanh - sigmoid
+#output class = 2
+python main.py --input-shape 2 --output-shape 2 --n-list 2-5-3-2 --a-list t-t-t-s --l 0.9 --epochs 100 --batch 10 --x dataset/x_dataset.csv --y dataset/y_dataset.csv --x-valid dataset/x_dataset.csv --y-valid dataset/y_dataset.csv
+
+
+# 4 --------------------------------------------------------------------------------
+#use XOR dataset
+#train dataset and valid dataset are same
+#neurons at each layer = 2 neurons for hidden layer 1, 3 neurons for hidden layer 2,  2 neurons for output layer
+#activation = tanh - tanh - sigmoid
+#output class = 2
+python main.py --input-shape 2 --output-shape 1 --n-list 2-3-1 --a-list t-t-s --l 0.9 --epochs 100 --batch 10 --x dataset/x_xor_dataset.csv --y dataset/y_xor_dataset.csv --x-valid dataset/x_xor_dataset.csv --y-valid dataset/y_xor_dataset.csv
